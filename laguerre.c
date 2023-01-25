@@ -12,7 +12,7 @@ double laguerre(int n, double x) {
 	if (n == 1) {
 		return -x+1;
 	}
-	return ((2*(n-1)+1-x) * laguerre(n-1, x) - (n-1) * laguerre(n-2, x)) / n; //przesuwamy indeksy h(x) o jeden w lewo, stąd n - 1 ; n - 2
+	return ((2*(n-1)+1-x) * laguerre(n-1, x) - (n-1) * laguerre(n-2, x)) / n;
 }
 
 double ld1(int n, double x) {
